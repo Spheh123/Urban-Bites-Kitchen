@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Bites Kitchen | Luxury Restaurant Experience</title>
+    <meta
+      name="description"
+      content="Urban Bites Kitchen is a luxury restaurant experience serving signature gatsbys, crafted burgers, premium drinks, and effortless online ordering."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Urban Bites Kitchen home">
+          <span class="brand-mark">UB</span>
+          <span>
+            <strong>Urban Bites</strong>
+            <small>Kitchen</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#order" class="nav-cta">Order Online</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="hero section">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Luxury street dining, reimagined</p>
+            <h1>Dark, decadent dining crafted for the city’s boldest appetites.</h1>
+            <p class="hero-text">
+              Urban Bites Kitchen blends flame-grilled favorites, elevated plating,
+              and nightlife energy into a premium restaurant experience built for
+              dates, dinners, and seamless delivery.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#order">Order Tonight</a>
+              <a class="button button-secondary" href="#menu">Explore Menu</a>
+            </div>
+
+            <div class="hero-stats">
+              <article>
+                <strong>4.9/5</strong>
+                <span>Guest rating</span>
+              </article>
+              <article>
+                <strong>15 min</strong>
+                <span>Average pickup</span>
+              </article>
+              <article>
+                <strong>Chef-led</strong>
+                <span>Signature menu</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-card hero-card-main">
+              <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+                alt="Luxury restaurant dining interior"
+              />
+            </div>
+            <div class="hero-card hero-card-floating">
+              <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80"
+                alt="Plated gourmet burger and fries"
+              />
+            </div>
+            <div class="hero-badge">
+              <span>Chef's Signature</span>
+              <strong>Truffle Gatsby</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="highlights section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Why Urban Bites</p>
+            <h2>An atmosphere that feels cinematic, with food that lives up to it.</h2>
+          </div>
+
+          <div class="highlight-grid">
+            <article class="highlight-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80"
+                alt="Chef plating food in a premium kitchen"
+              />
+              <div>
+                <h3>Chef-driven menu</h3>
+                <p>
+                  Refined comfort food with premium ingredients, bold sauces, and
+                  polished presentation in every dish.
+                </p>
+              </div>
+            </article>
+
+            <article class="highlight-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80"
+                alt="Elegant cocktail on a restaurant table"
+              />
+              <div>
+                <h3>Golden-hour ambiance</h3>
+                <p>
+                  Velvet shadows, warm lighting, and modern luxury details give every
+                  seat in the house a premium mood.
+                </p>
+              </div>
+            </article>
+
+            <article class="highlight-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"
+                alt="Close-up of premium plated restaurant food"
+              />
+              <div>
+                <h3>Fast online ordering</h3>
+                <p>
+                  Build your order, review your cart, and send it straight to WhatsApp
+                  in a couple of taps.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="menu" class="menu section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Menu</p>
+            <h2>Signature gatsbys, stacked burgers, and polished pours.</h2>
+            <p>
+              Your menu is rendered from JavaScript, so editing names, prices, or
+              categories later is simple.
+            </p>
+          </div>
+
+          <div class="menu-toolbar reveal">
+            <div id="menu-filters" class="filter-group" aria-label="Menu filters"></div>
+            <a class="button button-secondary" href="#order">Go to Cart</a>
+          </div>
+
+          <div id="menu-grid" class="menu-grid"></div>
+        </section>
+
+        <section id="about" class="about section">
+          <div class="about-media reveal">
+            <img
+              class="about-image-large"
+              src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80"
+              alt="Stylish luxury restaurant lounge"
+            />
+            <img
+              class="about-image-small"
+              src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80"
+              alt="Guests enjoying dinner at a modern restaurant"
+            />
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="eyebrow">About</p>
+            <h2>A luxury restaurant brand with urban soul.</h2>
+            <p>
+              Urban Bites Kitchen was built to bring a premium design mindset to
+              comfort food. We pair indulgent flavors with a polished atmosphere,
+              making everyday dining feel like a special occasion.
+            </p>
+            <p>
+              From our loaded gatsbys to our house burgers and late-night drinks,
+              everything is designed to feel elevated, indulgent, and easy to love.
+            </p>
+
+            <div class="about-points">
+              <article>
+                <strong>Premium sourcing</strong>
+                <span>Quality produce, artisan buns, and house-made sauces.</span>
+              </article>
+              <article>
+                <strong>Event-ready atmosphere</strong>
+                <span>Ideal for date nights, dinners, and private celebrations.</span>
+              </article>
+              <article>
+                <strong>Easy to customize</strong>
+                <span>Menu data, WhatsApp number, and contact info are editable.</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Testimonials</p>
+            <h2>Guests come for the atmosphere and return for the flavor.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card reveal">
+              <p>
+                “The vibe is unreal. It feels like a high-end lounge, but the food
+                hits like the best comfort meal in the city.”
+              </p>
+              <strong>Nomsa D.</strong>
+              <span>Weekend diner</span>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <p>
+                “That truffle burger was next-level and ordering on WhatsApp was
+                ridiculously easy. Beautiful brand, beautiful food.”
+              </p>
+              <strong>Jason M.</strong>
+              <span>Takeaway customer</span>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <p>
+                “Urban Bites looks and feels premium in every detail. This is the kind
+                of restaurant site that makes you book instantly.”
+              </p>
+              <strong>Lerato K.</strong>
+              <span>Private event guest</span>
+            </article>
+          </div>
+        </section>
+
+        <section id="order" class="order section">
+          <div class="order-copy reveal">
+            <p class="eyebrow">Order Online</p>
+            <h2>Build your order and send it to WhatsApp in seconds.</h2>
+            <p>
+              Guests can browse the menu above, add items to the cart, and place an
+              order directly through WhatsApp. Update the phone number in
+              <code>script.js</code> to make it live for your restaurant.
+            </p>
+
+            <div class="order-banner">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80"
+                alt="Restaurant table with plated dinner and drinks"
+              />
+              <div>
+                <strong>Tonight's spotlight</strong>
+                <span>Complimentary fries with every signature burger after 6 PM.</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="cart-panel reveal" aria-labelledby="cart-title">
+            <div class="cart-header">
+              <div>
+                <p class="eyebrow">Cart UI</p>
+                <h3 id="cart-title">Your Order</h3>
+              </div>
+              <span id="cart-count" class="cart-count">0 items</span>
+            </div>
+
+            <div id="cart-items" class="cart-items">
+              <p class="cart-empty">Your cart is empty. Add menu items to begin.</p>
+            </div>
+
+            <div class="cart-summary">
+              <div>
+                <span>Subtotal</span>
+                <strong id="cart-total">R0.00</strong>
+              </div>
+              <a
+                id="whatsapp-order"
+                class="button button-primary button-block is-disabled"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                aria-disabled="true"
+              >
+                Send via WhatsApp
+              </a>
+            </div>
+          </aside>
+        </section>
+
+        <section id="contact" class="contact section">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Reserve a table, plan an event, or reach out directly.</h2>
+            <p>
+              This static build is Netlify-friendly and easy to manage. You can replace
+              the details below with your real address, email, and trading hours.
+            </p>
+
+            <div class="contact-grid">
+              <article>
+                <strong>Visit us</strong>
+                <span>18 Gold Street, Rosebank, Johannesburg</span>
+              </article>
+              <article>
+                <strong>Call or WhatsApp</strong>
+                <span>+27 67 123 4567</span>
+              </article>
+              <article>
+                <strong>Email</strong>
+                <span>hello@urbanbiteskitchen.com</span>
+              </article>
+              <article>
+                <strong>Hours</strong>
+                <span>Mon - Sun: 11:00 AM - 11:00 PM</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1515669097368-22e68427d265?auto=format&fit=crop&w=1200&q=80"
+              alt="Elegant restaurant seating area"
+            />
+            <form class="contact-form" onsubmit="event.preventDefault()">
+              <h3>Send an enquiry</h3>
+              <label>
+                Name
+                <input type="text" placeholder="Your name" />
+              </label>
+              <label>
+                Email
+                <input type="email" placeholder="you@example.com" />
+              </label>
+              <label>
+                Message
+                <textarea rows="4" placeholder="Tell us about your booking or event"></textarea>
+              </label>
+              <button type="submit" class="button button-secondary">Submit Enquiry</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Urban Bites Kitchen</p>
+        <span>Luxury dining. Elevated comfort. Seamless ordering.</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
